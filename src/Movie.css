@@ -1,9 +1,13 @@
-
-.movie {
-    border: 2px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #333;
-  }
-  
+.Movies {  
+  margin: 30px;
+}
+.Movie{
+  margin: 15px;
+  background-color: grey;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+h4 {
+  color: orange;
+}
