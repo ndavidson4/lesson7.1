@@ -1,13 +1,20 @@
 .Movies {  
   margin: 30px;
 }
+
 .Movie{
+  text-align: left;
   margin: 15px;
-  background-color: grey;
+  background-color: lightgrey;
   padding: 20px;
   border: 2px solid black;
   border-radius: 5px;
 }
+
 h4 {
-  color: orange;
+  color: darkorange;
+}
+
+h2 {
+  font-weight: bold;
 }
