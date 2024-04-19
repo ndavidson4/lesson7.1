@@ -1,15 +1,13 @@
-function Movie() {
+import React from "react";
+
+const Movie = ({ movie, onDelete }) => {
   return (
-      <div className="Movie">
-
-          <h2>Movie Title: The Batman</h2>
-
-          <h4>Director: Matt Reeves</h4>
-          
-          <p>Stars: Robert Pattinson, Zoe Kravitz</p>
-
-      </div>
+    <div className="movie">
+      <h2>{movie.title}</h2>
+      <p>Director: {movie.director}</p>
+      <button onClick={() => onDelete(movie.id)}>Delete</button>
+    </div>
   );
-}
+};
 
 export default Movie;
