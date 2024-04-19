@@ -1,12 +1,13 @@
+
 import React, { useState } from "react";
 import Movie from "./Movie";
 
 const moviesData = [
-  { id: 1, title: "Inception", director: "Christopher Nolan" },
-  { id: 2, title: "The Shawshank Redemption", director: "Frank Darabont" },
-  { id: 3, title: "The Godfather", director: "Francis Ford Coppola" },
-  { id: 4, title: "Pulp Fiction", director: "Quentin Tarantino" },
-  { id: 5, title: "The Dark Knight", director: "Christopher Nolan" }
+  { id: 1, title: "The Batman", director: "Matt Reeves", stars: "Robert Pattinson, Zoe Kravitz" },
+  { id: 2, title: "Turning Red", director: "Domee Shi", stars: "Roselie Chiang, Snadra Oh" },
+  { id: 3, title: "Spider-Man: No Way Home", director: "Jon Watts", stars: "Tom Holland, Zendaya" },
+  { id: 4, title: "How to Train Your Dragon", director: "Dean DeBlois and Chris Sanders", stars: "Jay Baruchel, Gerad Butler" },
+  { id: 5, title: "Pulp Fiction", director: "Quentin Tarantino", stars: "John Travolta, Uma Thurman" }
 ];
 
 const MovieList = () => {
@@ -17,7 +18,7 @@ const MovieList = () => {
   };
 
   return (
-    <div>
+    <div className="movie">
       {movies.map(movie => (
         <Movie key={movie.id} movie={movie} onDelete={deleteMovie} />
       ))}
