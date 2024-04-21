@@ -8,8 +8,8 @@ import MovieList from "./MovieList";
 function App() {
   return (
     <div>
-      <h1>List of Movies:</h1>
       <div className="movie">
+        <h1>List of Movies:</h1>
         <div className="movieRow">
           <div className="col-lg-4">
             <MovieList />

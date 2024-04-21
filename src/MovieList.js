@@ -1,22 +1,19 @@
-
 import React, { useState } from "react";
 import Movie from "./Movie";
+import MovieList from './Movies.json';
 
-const moviesData = [
-  { id: 1, title: "The Batman", director: "Matt Reeves", stars: "Robert Pattinson, Zoe Kravitz" },
-  { id: 2, title: "Turning Red", director: "Domee Shi", stars: "Roselie Chiang, Snadra Oh" },
-  { id: 3, title: "Spider-Man: No Way Home", director: "Jon Watts", stars: "Tom Holland, Zendaya" },
-  { id: 4, title: "How to Train Your Dragon", director: "Dean DeBlois and Chris Sanders", stars: "Jay Baruchel, Gerad Butler" },
-  { id: 5, title: "Pulp Fiction", director: "Quentin Tarantino", stars: "John Travolta, Uma Thurman" }
-];
 
-const MovieList = () => {
-  const [movies, setMovies] = useState(moviesData);
+export default function Movies() {
+  // sets up and initalizes the state variable movies
+  const [movies, setMovies] = useState(MovieList);
 
+  // handler for deleting a movie 
   const deleteMovie = id => {
+    // updates the movie varible
     setMovies(prevMovies => prevMovies.filter(movie => movie.id !== id));
   };
 
+  // iterates through the movieList 
   return (
     <div className="movie">
       {movies.map(movie => (
@@ -26,4 +23,4 @@ const MovieList = () => {
   );
 };
 
-export default MovieList;
+//export default MovieList;
