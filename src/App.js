@@ -12,10 +12,9 @@ function App() {
         <h1>List of Movies:</h1>
 
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-6">
             <MovieList />
           </div>
-
         </div>
 
       </div>
