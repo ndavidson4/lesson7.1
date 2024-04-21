@@ -11,12 +11,13 @@ function App() {
       <div className="movie">
         <h1>List of Movies:</h1>
 
-        <div className="movieRow">
-          <div className="col-lg-4">
+        <div className="row">
+          <div className="col-lg-12">
             <MovieList />
           </div>
+
         </div>
-        
+
       </div>
     </div>
   );

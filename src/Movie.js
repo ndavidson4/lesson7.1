@@ -1,6 +1,6 @@
 import React from "react";
 import "./Movie.css";
-import Movies from "./MovieList";
+import MovieData from "./MovieList";
 
 const Movie = ({ movie, onDelete }) => {
   return (
