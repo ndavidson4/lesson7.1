@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Movie from "./Movie";
-import MovieList from './Movies.json';
+import MovieData from './Movies.json';
 
 
-export default function Movies() {
+export default function MovieList() {
   // sets up and initalizes the state variable movies
-  const [movies, setMovies] = useState(MovieList);
+  const [movies, setMovies] = useState(MovieData);
 
   // handler for deleting a movie 
   const deleteMovie = id => {

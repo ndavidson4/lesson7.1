@@ -1,5 +1,6 @@
 import React from "react";
 import "./Movie.css";
+import Movies from "./MovieList";
 
 const Movie = ({ movie, onDelete }) => {
   return (

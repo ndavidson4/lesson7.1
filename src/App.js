@@ -10,11 +10,13 @@ function App() {
     <div>
       <div className="movie">
         <h1>List of Movies:</h1>
+
         <div className="movieRow">
           <div className="col-lg-4">
             <MovieList />
           </div>
         </div>
+        
       </div>
     </div>
   );
